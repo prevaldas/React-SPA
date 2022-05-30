@@ -61,7 +61,7 @@
     font-size: 3rem;
     color: chocolate;
     text-align: center;
-    padding: 5%;
+    padding: 2%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -98,4 +98,20 @@
     font-size: 2rem;
     text-align: center;
     color: darkolivegreen;
+}
+.comment {
+    text-align: center;
+}
+input {
+    padding: 1%;
+    margin: 1%;
+    border-radius: 15px;
+    border: none;
+    background-color: ivory;
+}
+
+.h3-input {
+    font-size: 2rem;
+    font-weight: 100;
+    color: ivory;
 }
