@@ -24,7 +24,7 @@ render() {
     return(<div>
   
     <h4 className="rate">Rate this page:</h4>
-    <div className="rate">{this.state.count}</div>
+    <div className="rate-no">{this.state.count}</div>
     <div className="buttons">
     <button className="plusBtn" onClick={() => this.increment()}>+</button>
     <button className="minusBtn" onClick={() => this.decrement()}>-</button>

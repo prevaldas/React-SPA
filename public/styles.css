@@ -71,6 +71,7 @@
     margin: 0 auto;
     width: 10%;
     height: 5%;
+    margin-bottom: 7%;
 }
 @media only screen and (max-width: 700px) {
     .buttons {
@@ -95,9 +96,15 @@
 }
 
 .rate {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     color: darkolivegreen;
+}
+.rate-no {
+        font-size: 3rem;
+            font-weight: 900;
+            text-align: center;
+            color: darkolivegreen;
 }
 .comment {
     text-align: center;
@@ -109,9 +116,15 @@ input {
     border: none;
     background-color: ivory;
 }
-
+/* 
 .h3-input {
     font-size: 2rem;
     font-weight: 100;
     color: ivory;
+} */
+
+.item-p {
+        font-size: 2rem;
+            font-weight: 100;
+            color: ivory;
 }
