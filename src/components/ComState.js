@@ -9,23 +9,25 @@ const ComState = () => {
     setNames([...names, {id: names.length, name}]);
     setName("");
     }
-    useEffect(() => {
-        
-    },[]);
+
+function disapier() {
+  document.querySelector('#form-input').style.display= 'none';
+}
     
     return (
     <div className="comment">
 
-        <form onSubmit={addComment}>
-            <input type="text" value={name} 
+        <form  id="form-input" onSubmit={addComment}>
+            <input type="text"
+            spellcheck="false" value={name} 
             placeholder="or write comment..."
             onChange={(e) => setName(e.target.value)} />
-            <button className="btn" >Submit</button>
+            <button onClick={disapier} className="btn" >Submit</button>
 
         </form>
         
             {names.map((item) => (
-                <p className="item-p" key={item.id}>{item.name}</p>
+                <p id="form-comment" className="item-p" key={item.id}>{item.name}</p>
             ))}
             
     </div>
