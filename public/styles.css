@@ -1,3 +1,46 @@
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-areas:
+            'header header header'
+            'menu menu menu'
+            'main main main'
+            'right right right'
+            'footer footer footer';
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
 
 .App {
     width: 100%;
@@ -8,43 +51,35 @@
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
-/* FOOTER */
-
-.footer {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    position: fixed;
-    color: ivory;
+@media only screen and (max-width: 900px) {
+    .App {
+        position: relative;
+    }
 }
 
-.name {
-    font-size: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
 /* CLASSCOMP */
 
 
 .greet {
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center;
     color: darkolivegreen;
 }
 
-.greet-btn{
-        text-align: center;
+.greet-btn {
+    text-align: center;
 }
 
 .btn {
     background: chocolate;
-     -webkit-border-radius: 28;
+    -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
     text-shadow: 1px 1px 20px #666666;
     font-family: Arial;
-    color:ivory;
-    font-size: 15px;
+    color: ivory;
+    font-size: 12px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     border: none;
@@ -58,37 +93,39 @@
 /* FUNCTIONCOMP */
 
 .greetName {
-    font-size: 3rem;
+    font-size: 2rem;
     color: chocolate;
     text-align: center;
     padding: 2%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* SETSTATECOUNTER */
 
-.buttons{
+.buttons {
     margin: 0 auto;
-    width: 10%;
+    width: 20%;
     height: 5%;
-    margin-bottom: 7%;
+    margin-bottom: 17%;
 }
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 900px) {
     .buttons {
         width: 20%;
     }
 }
 
 .plusBtn {
-    font-size: 2.5rem;
-    color:chocolate;
+    font-size: 2rem;
+    color: chocolate;
     border: none;
     background: transparent;
     float: left;
 
 }
+
 .minusBtn {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: chocolate;
     border: none;
     background: transparent;
@@ -96,35 +133,117 @@
 }
 
 .rate {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     color: darkolivegreen;
 }
+
 .rate-no {
-        font-size: 3rem;
-            font-weight: 900;
-            text-align: center;
-            color: darkolivegreen;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    color: darkolivegreen;
 }
+
+/* COMMENT */
+
 .comment {
     text-align: center;
 }
+
 input {
-    padding: 1%;
+    padding: 2%;
     margin: 1%;
     border-radius: 15px;
     border: none;
     background-color: ivory;
 }
-/* 
-.h3-input {
+
+.item-p {
     font-size: 2rem;
     font-weight: 100;
     color: ivory;
-} */
+}
 
-.item-p {
-        font-size: 2rem;
-            font-weight: 100;
-            color: ivory;
+/* JOKE */
+
+.joke-space {
+    width: 20%;
+    text-align: center;
+    font-size: 0.9rem;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 900px) {
+    .joke-space {
+        position: relative;
+    }
+}
+
+.joke-gen {
+    font-size: 2rem;
+    text-align: center;
+    color: darkolivegreen;
+}
+
+
+/* TODO */
+
+.todo-h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: darkolivegreen;
+}
+
+.btn-x {
+    margin: 3%;
+    background: tomato;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 1px 1px 20px #666666;
+    font-family: Arial;
+    color: ivory;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    border: none;
+}
+
+.todo {
+    text-align: center;
+    margin-left: 15%;
+}
+
+.input {
+    padding: 2.5%;
+    margin: 1%;
+    border-radius: 15px;
+    border: none;
+    background-color: ivory;
+}
+
+/* FOOTER */
+
+.footer {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    position: fixed;
+    color: ivory;
+}
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        text-align: center;
+        position: relative;
+    }
+}
+
+
+.name {
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

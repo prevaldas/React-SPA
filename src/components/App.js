@@ -1,19 +1,23 @@
-
-import Footer from './Footer.js';
-import FunctionComp from './FunctionComp.js';
-import ClassComp from "./ClassComp";
-import SetStateCounter from "./SetStateCounter";
+import JokeGen from "./JokeGen";
+import Footer from "./Footer";
+import FunctionComp from "./FunctionComp";
+import ClassComp from "./ClassComp"
 import ComState from "./ComState";
+import SetStateCounter from "./SetStateCounter";
+import TodoList from "./TodoList";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-    <ClassComp />
-    <FunctionComp name="Evaldas" />
-    <SetStateCounter />
-    <ComState />
-    <Footer />
-    </div>
+  <div className="App grid-container">
+  <div class="item1"><ClassComp /><FunctionComp name="Evaldas" /></div>
+  <div class="item2"><JokeGen /></div>
+  <div class="item3"><TodoList /></div>  
+  <div class="item4"><SetStateCounter /><ComState /></div>
+  <div class="item5"><Footer /></div>
+  </div>
   );
 }
 

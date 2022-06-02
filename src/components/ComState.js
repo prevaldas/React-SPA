@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 
 const ComState = () => {
 
@@ -19,7 +19,7 @@ function disapier() {
 
         <form  id="form-input" onSubmit={addComment}>
             <input type="text"
-            spellcheck="false" value={name} 
+            spellCheck="false" value={name} 
             placeholder="or write comment..."
             onChange={(e) => setName(e.target.value)} />
             <button onClick={disapier} className="btn" >Submit</button>
