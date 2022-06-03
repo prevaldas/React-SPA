@@ -40,7 +40,6 @@ class TodoList extends React.Component {
         const updatedList = list.filter(item => item.id !== id);
         this.setState({list: updatedList}) 
     }
-
 render() {
     return (
         <div className="todo">
