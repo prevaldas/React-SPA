@@ -10,7 +10,7 @@ function JokeGen () {
             const [joke, setJoke] = useState("");
 
         const getJoke = () => {
-            axios.get("https://v2.jokeapi.dev/joke/Any?type=twopart")
+            axios.get("?blacklistFlags=religious,political,racist,sexist,explicit&type=twopart")
             .then(res => {
                 console.log(res);
                 setJoke(res.data.setup + " ... " + res.data.delivery);
