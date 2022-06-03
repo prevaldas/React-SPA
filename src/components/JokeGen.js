@@ -1,25 +1,28 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
+
+
+
 
 
 function JokeGen () {
 
             const [joke, setJoke] = useState("");
 
-            const generateJoke = () => {
-            fetch(
-                "http://api.icndb.com/jokes/randome?firstName=Evaldas&lastName=Pranckevicius"
-                )
-                .then((res) => res.json())
-                .then((data) => {setJoke(data.value.joke)})
-        
-            }
-    useEffect(() => {
-            generateJoke();
-    }, []);
+        const getJoke = () => {
+            axios.get("https://v2.jokeapi.dev/joke/Any?type=twopart")
+            .then(res => {
+                console.log(res);
+                setJoke(res.data.setup + " ... " + res.data.delivery);
+            }).catch(err => {
+            })
+        }
+
     return<div className="item2">
-    <center><h1 className="joke-gen">Joke Generator</h1>
+    <center>
+    <h1 className="joke-gen">Joke Generator</h1>
         <h2 className="joke-space" dangerouslySetInnerHTML={{__html: joke}} />
-    <button className="btn" onClick={generateJoke}>Generate joke</button>
+    <button className="btn" onClick={getJoke}>Generate joke</button>
     </center>
     </div>
 }

@@ -12,11 +12,11 @@ import TodoList from "./TodoList";
 function App() {
   return (
   <div className="App grid-container">
-  <div class="item1"><ClassComp /><FunctionComp name="Evaldas" /></div>
-  <div class="item2"><JokeGen /></div>
-  <div class="item3"><TodoList /></div>  
-  <div class="item4"><SetStateCounter /><ComState /></div>
-  <div class="item5"><Footer /></div>
+  <div className="item1"><ClassComp /><FunctionComp name="Evaldas" /></div>
+  <div className="item2"><JokeGen /></div>
+  <div className="item3"><TodoList /></div>  
+  <div className="item4"><SetStateCounter /><ComState /></div>
+  <div className="item5"><Footer /></div>
   </div>
   );
 }
