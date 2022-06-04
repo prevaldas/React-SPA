@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 
@@ -14,9 +14,12 @@ function JokeGen() {
             .then(res => {
                 console.log(res);
                 setJoke(res.data.setup + " ... " + res.data.delivery);
-            }).catch(err => {
             })
     }
+
+        useEffect(() => {
+        getJoke()
+    },[]);
 
     return <div className="item2">
         <center>

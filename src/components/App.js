@@ -5,6 +5,7 @@ import ClassComp from "./ClassComp"
 import ComState from "./ComState";
 import SetStateCounter from "./SetStateCounter";
 import TodoList from "./TodoList";
+import Views from "./Views";
 
 
 
@@ -16,7 +17,7 @@ function App() {
   <div className="item2"><JokeGen /></div>
   <div className="item3"><TodoList /></div>  
   <div className="item4"><SetStateCounter /><ComState /></div>
-  <div className="item5"><Footer /></div>
+  <div className="item5"><Footer /><Views /></div>
   </div>
   );
 }
