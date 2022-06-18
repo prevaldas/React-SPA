@@ -6,7 +6,7 @@ class MyComponent extends React.Component {
   constructor() {
     super();
     this.state = {
-        message: "Hello!"
+        message: "Hello World!"
     }
   }
 
@@ -18,7 +18,7 @@ class MyComponent extends React.Component {
 
   change(){
     this.setState({
-      message:"Hello!"
+      message:"Hello World!"
     })
   }
   render() {
