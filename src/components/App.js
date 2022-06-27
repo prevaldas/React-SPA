@@ -25,6 +25,7 @@ function App() {
             <Route path="/" element={<FunctionComp name="Evaldas" />} />
             <Route path="/joke" element={<JokeGen />} />
             <Route path="/todo" element={<TodoList />} />
+            <Route path="*" element={<FunctionComp name="Evaldas" />} />
           </Routes>
         </div>
         <div className="item4">
