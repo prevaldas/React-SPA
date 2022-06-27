@@ -1,15 +1,14 @@
-import React from "react";
+import React from 'react';
 
 // PROPS
 
-const FunctionComp = props => { 
-    return<div className="greetName">
-<h3>My name is {props.name}</h3>
-{/* <br /> */}
-<h6>and here is React functionality to try out.</h6>
+const FunctionComp = (props) => {
+  return (
+    <div className="greetName">
+      <h3>My name is {props.name}</h3>
+      <h6>and here is React functionality to try out.</h6>
     </div>
-}
-
-
+  );
+};
 
 export default FunctionComp;
