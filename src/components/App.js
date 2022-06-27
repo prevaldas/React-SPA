@@ -16,13 +16,13 @@ function App() {
       <div className="App grid-container">
         <div className="item1">
           <ClassComp />
-          <FunctionComp name="Evaldas" />
         </div>
         <div className="item2">
           <Menu />
         </div>
         <div className="item3">
           <Routes>
+            <Route path="/" element={<FunctionComp name="Evaldas" />} />
             <Route path="/joke" element={<JokeGen />} />
             <Route path="/todo" element={<TodoList />} />
           </Routes>

@@ -37,6 +37,11 @@ html {
   gap: 1rem;
 }
 
+/* @media only screen and (min-width: 900px) {
+  .nav li {
+    font-size: 1.5rem;
+  } */
+
 /* CLASSCOMP */
 
 .greet {
