@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 export default function Menu() {
   return (
     <nav className="nav">
-      <h4>Menu</h4>
+      <Link style={{ textDecoration: 'none', color: '#2196f3' }} to="/">
+        Menu
+      </Link>
       <ul>
         <li>
           <Link style={{ textDecoration: 'none', color: '#2196f3' }} to="joke">
