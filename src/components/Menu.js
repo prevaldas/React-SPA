@@ -4,17 +4,17 @@ export default function Menu() {
   return (
     <nav className="nav">
       <Link style={{ textDecoration: 'none', color: '#2196f3' }} to="/">
-        Menu
+        Home
       </Link>
       <ul>
-        <li>
+        <li className="menu-list">
           <Link style={{ textDecoration: 'none', color: '#2196f3' }} to="joke">
-            Joke
+            Generate joke
           </Link>
         </li>
-        <li>
+        <li className="menu-list">
           <Link style={{ textDecoration: 'none', color: '#2196f3' }} to="todo">
-            To Do
+            To-do list
           </Link>
         </li>
       </ul>

@@ -5,7 +5,6 @@ html {
 
 .App {
   overflow: hidden;
-  /* position: absolute; */
   background: rgb(34, 193, 195);
   background: linear-gradient(
     0deg,
@@ -13,12 +12,6 @@ html {
     rgba(253, 187, 45, 1) 100%
   );
 }
-
-/* @media only screen and (max-width: 900px) {
-  .App {
-    position: relative;
-  }
-} */
 
 /* MENU */
 
@@ -35,6 +28,9 @@ html {
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+.nav li {
+  margin-top: 5%;
 }
 
 /* @media only screen and (min-width: 900px) {
@@ -158,7 +154,7 @@ input {
   text-align: center;
   font-size: 1.1rem;
   position: absolute;
-  margin-left: 10%;
+  margin-left: 8%;
   margin-top: 7%;
   color: darkolivegreen;
 }
@@ -213,14 +209,6 @@ input {
 
 /* FOOTER */
 
-.footer {
-  /* left: 50%;
-  transform: translateX(-50%);
-  bottom: 3%;
-  position: fixed; */
-  color: ivory;
-}
-
 @media only screen and (max-width: 900px) {
   .footer {
     text-align: center;
@@ -229,10 +217,6 @@ input {
 }
 
 .visit-h5 {
-  /* left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  position: fixed; */
   font-size: 0.7rem;
   color: #2196f3;
   font-weight: 300;
@@ -286,7 +270,7 @@ input {
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: lightgoldenrodyellow;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
