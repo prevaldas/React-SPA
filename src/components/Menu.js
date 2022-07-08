@@ -17,6 +17,14 @@ export default function Menu() {
             To-do list
           </Link>
         </li>
+        <li className="menu-list">
+          <Link
+            style={{ textDecoration: 'none', color: '#2196f3' }}
+            to="dogAge"
+          >
+            Dog age
+          </Link>
+        </li>
       </ul>
     </nav>
   );

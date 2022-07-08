@@ -1,7 +1,5 @@
 import React from 'react';
 
-// PROPS
-
 const FunctionComp = (props) => {
   return (
     <div className="greetName">

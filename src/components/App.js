@@ -8,11 +8,12 @@ import Menu from './Menu';
 import { Route, Routes } from 'react-router-dom';
 import JokeGen from './JokeGen';
 import TodoList from './TodoList';
-import { BrowserRouter } from 'react-router-dom';
+import DogAge from './DogAge';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter hashType="hashbang">
       <div className="App grid-container">
         <div className="item1">
           <ClassComp />
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" element={<FunctionComp name="Evaldas" />} />
             <Route path="/joke" element={<JokeGen />} />
             <Route path="/todo" element={<TodoList />} />
+            <Route path="/dogAge" element={<DogAge />} />
             <Route path="*" element={<FunctionComp name="Evaldas" />} />
           </Routes>
         </div>
@@ -37,7 +39,7 @@ function App() {
           <Footer />
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
