@@ -9,6 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 import JokeGen from './JokeGen';
 import TodoList from './TodoList';
 import DogAge from './DogAge';
+import Weather from './Weather';
 import { HashRouter } from 'react-router-dom';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/joke" element={<JokeGen />} />
             <Route path="/todo" element={<TodoList />} />
             <Route path="/dogAge" element={<DogAge />} />
+            <Route path="/weather" element={<Weather />} />
             <Route path="*" element={<FunctionComp name="Evaldas" />} />
           </Routes>
         </div>

@@ -20,11 +20,11 @@ function JokeGen() {
   return (
     <div className="item2">
       <center>
-        <h1 className="joke-gen">Joke Generator</h1>
-        <h2 className="joke-space" dangerouslySetInnerHTML={{ __html: joke }} />
+        <br />
         <button className="btn" onClick={getJoke}>
-          Generate joke
+          New joke
         </button>
+        <h2 className="joke-space" dangerouslySetInnerHTML={{ __html: joke }} />
       </center>
     </div>
   );

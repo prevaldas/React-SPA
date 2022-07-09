@@ -163,7 +163,7 @@ input {
   text-align: center;
   font-size: 1.1rem;
   position: absolute;
-  margin-left: 8%;
+  margin-left: 7%;
   margin-top: 7%;
   color: darkolivegreen;
 }
@@ -205,7 +205,7 @@ input {
 
 .todo {
   text-align: center;
-  margin-left: 15%;
+  margin-left: 7%;
 }
 
 .input {
@@ -291,4 +291,12 @@ input {
   font-size: 3rem;
   color: #2196f3;
   font-weight: 300;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+.weather-func {
+  font-size: 0.8rem;
 }

@@ -25,6 +25,14 @@ export default function Menu() {
             Dog age
           </Link>
         </li>
+        <li className="menu-list">
+          <Link
+            style={{ textDecoration: 'none', color: '#2196f3' }}
+            to="weather"
+          >
+            Weather
+          </Link>
+        </li>
       </ul>
     </nav>
   );
