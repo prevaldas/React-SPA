@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 // import React, { useEffect } from 'react';
-import Icon from './Icon';
+// import Icon from './Icon';
 
 function Weather() {
   const [data, setData] = useState({});
@@ -57,7 +57,7 @@ function Weather() {
             {data.weather ? (
               <p>
                 {data.weather[0].main}
-                <Icon />
+                {/* <Icon /> */}
                 {/* {icon} */}
               </p>
             ) : null}
@@ -66,21 +66,21 @@ function Weather() {
 
         {data.name !== undefined && (
           <div className="bottom">
-            <div className="feels">
+            {/* <div className="feels">
               {data.main ? (
                 <p className="bold">{data.main.feels_like.toFixed()}°C</p>
               ) : null}
               <p>Feels Like</p>
-            </div>
+            </div> */}
             <div className="humidity">
-              {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
               <p>Humidity</p>
+              {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
             </div>
             <div className="wind">
+              <p>Wind Speed</p>
               {data.wind ? (
                 <p className="bold">{data.wind.speed.toFixed()} MPH</p>
               ) : null}
-              <p>Wind Speed</p>
             </div>
           </div>
         )}

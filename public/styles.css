@@ -298,5 +298,7 @@ img {
   height: 50px;
 }
 .weather-func {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: darkolivegreen;
+  font-weight: 300;
 }
